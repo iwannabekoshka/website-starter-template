@@ -3,3 +3,15 @@
 @use "layout";
 @use "utilities";
 @use "vendor";
+
+:root {
+  --color: green;
+}
+
+.test:has(p) {
+  background-color: var(--color);
+}
+
+.test:is(:hover) {
+  color: yellow;
+}
