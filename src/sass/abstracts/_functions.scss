@@ -1,5 +1,8 @@
 @use "sass:map";
 @use "colors" as *;
+@use "sizes" as *;
+@use "shadows" as *;
+@use "typography" as *;
 
 @function clr($color, $shade) {
   @if map.has-key($colors, $color, $shade) {
@@ -22,5 +25,21 @@
     @return map.get($sizes, $size);
   } @else {
     @error '$sizes does not have that size!';
+  }
+}
+
+@function line-height($size) {
+  @if map.has-key($line-heights, $size) {
+    @return map.get($line-heights, $size);
+  } @else {
+    @error '$line-heights does not have that size!';
+  }
+}
+
+@function shadow($variant) {
+  @if map.has-key($shadows, $variant) {
+    @return map.get($shadows, $variant);
+  } @else {
+    @error '$shadows does not have that variant!';
   }
 }

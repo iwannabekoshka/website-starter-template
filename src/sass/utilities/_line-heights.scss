@@ -1,0 +1,7 @@
+@use "../abstracts" as *;
+
+@each $lh-name, $lh-value in $line-heights {
+  .lh-#{$lh-name} {
+    line-height: $lh-value;
+  }
+}

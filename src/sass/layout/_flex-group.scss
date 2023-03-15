@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+.flex-group {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--flex-column-gap, gap("200"));
+  row-gap: var(--flex-row-gap, calc(gap("200") / 2));
+  width: fit-content;
+
+  &.margin-inline-auto {
+    justify-content: center;
+  }
+}

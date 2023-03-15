@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 @each $size-name, $size-value in $sizes {
-  .flow-#{$size-name} > *:not(:first-child) {
+  .flow-#{$size-name} > *:not(:first-child, .flow-short + *) {
     margin-top: $size-value;
   }
 }

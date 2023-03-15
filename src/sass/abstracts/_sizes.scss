@@ -1,8 +1,17 @@
 $sizes: (
-  "8": 0.5rem,
-  "12": 0.75rem,
-  "16": 1rem,
-  "20": 1.25rem,
-  "32": 2rem,
-  "36": 2.25rem,
+  "0": 0,
+  "100": 0.5rem,
+  "200": 1rem,
+  "250": 1.125rem,
+  "300": 1.5rem,
+  "400": 2rem,
+  "450": 2.25rem,
+  "500": 3rem,
+  "600": 4rem,
+  "700": 5rem,
+  "800": 7rem,
 );
+
+$container-inline-padding: 1rem;
+$container-max-width: 77.75rem;
+$container-wide-max-width: 100rem;

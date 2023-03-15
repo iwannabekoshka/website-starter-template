@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+
+@each $shadow-name, $shadow-value in $shadows {
+  .shadow-#{$shadow-name} {
+    box-shadow: $shadow-value;
+  }
+}
